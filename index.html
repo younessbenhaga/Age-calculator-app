@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        
+        <title>Frontend Mentor | Age calculator app</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+        
+      </head>
+</head>
+<body class=" m-2 flex justify-center bg-slate-100 item ">
+
+    <div class="h-1001 block bg-white rounded-t-3xl rounded-bl-3xl rounded-br-100px ml-14 mr-14 mt-9 " >
+
+        <div class=" flex ">
+            
+            <div class=" h-40 w-32 sm:w-40   p-3 mt-9 sm:m-3">
+                <label class=" font-bold text-sm font-sans text-slate-500 " for="DAY" >DAY </label><br>
+                
+                <input type="number" required id="DAY" name="DAY" placeholder="DD" class="border-slate-200 border-solid border  h-12 w-24 rounded-md  text-xl font-bold  mt-6 p-2"/><br>
+                <p class=" font-light text-xs1 text-red-700 mt-1" id="prday"></p>
+            </div>
+
+            <div class="   h-40 w-32  p-3 mt-9 sm:m-3 sm:w-40">
+                <label class=" font-bold  text-sm font-sans text-slate-500 " for="MONTH">MONTH </label><br>
+                <input type="number" required id="MONTH" name="MONTH" placeholder="MM" class="border-slate-200 border-solid border  h-12 w-24 rounded-md  text-xl font-bold mt-6 p-2"/><br>
+                <p id="prmonth" class=" font-light text-xs1 text-red-700 mt-1"></p>
+            </div>
+
+            <div class=" h-40 w-32  p-3 mt-9 sm:m-3 sm:w-40">
+                <label class=" font-bold  text-sm font-sans text-slate-500" for="YEAR">YEAR </label><br>
+                <input type="number" required id="YEAR" name="YEAR" placeholder="YY" class="border-slate-200 border-solid border  h-12 w-24 rounded-md  text-xl font-bold mt-6 p-2"/><br>
+                <p id="pryear" class=" font-light text-xs1 text-red-700 mt-1 "></p>
+            </div>
+        </div>
+    
+    <hr class="justify-center flex w-1/2 sm:w-full " style="margin: auto; ">
+
+    <button class="border-solid bg-violet-700 h-16 w-20 rounded-full  absolute kra1 left-1/3 text-white shadow-md sm:relative sm:h-24 sm:w-24 sm:float-right sm:left-0" id="btn">
+
+        <i class="fa-solid fa-arrows-down-to-line fa-beat-fade fa-2xl"></i>
+      </button>
+
+
+        <p class="font-bold text-5xl sm:text-8xl sm:mt-0 italic pl-8  mt-10">
+            <span class="tracking-tighter text-violet-600 italic font-bold font-sans" id="yearss" >- -</span>  years</p>
+
+        <p class="font-bold text-5xl sm:text-8xl sm:mt-0 italic pl-8 ">
+            <span class="tracking-tighter text-violet-600 italic" id="monthss">- -</span> month</p>
+
+        <p class="font-bold text-5xl sm:text-8xl sm:mt-0 italic pl-8 ">
+            <span class="tracking-tighter text-violet-600 italic" id="dayss">- -</span> days</p>
+
+
+
+    </div>
+            
+
+
+    <style>
+        .text-xs1{
+          font-size: 0.70rem;
+        }
+        .rounded-br-100px{
+          border-bottom-right-radius: 190px;
+        }
+        .h-1001{
+            height: 410px;
+            width: 100%;
+        }
+        .kra1{
+          /* left:37%; */
+          margin-top: -35px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        @media screen and (min-width:640px) {
+            .h-1001{
+                height: 500px;
+                width: 600px;
+            }
+            
+        }
+    </style>
+    <script src="javascript.js"></script>
+</body>
+</html>
